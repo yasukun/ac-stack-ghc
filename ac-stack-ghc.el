@@ -17,7 +17,7 @@
 	(forward-line 1))) ;一行下に移動
     (nreverse dict))) ;dictを反転して返す
 
-(defvar ac-dict-path  (expand-file-name "ac-stack-ghc-dict" (file-name-directory ac-stac-ghc-dictionary-directory)))
+(defvar ac-dict-path  (expand-file-name "ac-stack-ghc-dict" (file-name-directory ac-stack-ghc-dictionary-directory)))
 
 (defvar haskell-mod-dict (load-dictionary ac-dict-path))
 
@@ -29,7 +29,6 @@
 	  '(lambda ()
 	     (progn
 	       (add-to-list 'ac-sources 'ac-source-haskell-import t)
-	       (add-to-list 'ac-sources 'ac-stack-ghc-keywords t))
-	     ))
+	       (add-to-list 'ac-sources 'ac-stack-ghc-keywords t))))
 
 (provide 'ac-stack-ghc)

@@ -15,6 +15,6 @@ Emacs auto-complete source for haskell.
 
 ```bash
 (add-to-list 'load-path "/pathto/ac-stack-ghc/")
-(setq ac-stac-ghc-dictionary-directory "/pathto/ac-stack-ghc/")
+(setq ac-stack-ghc-dictionary-directory "/pathto/ac-stack-ghc/")
 (require 'ac-stack-ghc)
 ```
